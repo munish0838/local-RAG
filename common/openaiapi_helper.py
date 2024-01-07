@@ -6,8 +6,8 @@ load_dotenv()
 
 
 embedder_locator = os.environ.get("EMBEDDER_LOCATOR", "text-embedding-ada-002")
-api_key = os.environ.get("OPENAI_API_TOKEN", "")
-model_locator = os.environ.get("MODEL_LOCATOR", "gpt-3.5-turbo")
+api_key = os.environ.get("HF_API_TOKEN", "")
+model_locator = os.environ.get("MODEL_LOCATOR", "google/flan-t5-small")
 max_tokens = int(os.environ.get("MAX_TOKENS", 200))
 temperature = float(os.environ.get("TEMPERATURE", 0.0))
 

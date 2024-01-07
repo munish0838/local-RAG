@@ -2,7 +2,7 @@ import os
 import streamlit as st
 import requests
 from dotenv import load_dotenv
-
+import time
 # Load environment variables
 load_dotenv()
 api_host = os.environ.get("HOST", "0.0.0.0")
@@ -16,7 +16,6 @@ question = st.text_input(
     placeholder="What data are looking for?"
 )
 
-
 if question:
     print("Query received")
     url = f'http://{api_host}:{api_port}/'
@@ -25,6 +24,7 @@ if question:
     response = requests.post(url, json=data)
     
     print("Waiting for response")
+    time.sleep(10)
     if response.status_code == 200:
         st.write("### Answer")
         st.write(response.json())
