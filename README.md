@@ -5,7 +5,7 @@ It allows you to answer questions based on your test using SOTA model, locally o
 ## Demo
 
 See how the tool works:
-Video Link[https://drive.google.com/file/d/1LQlQ1oKDfjQB6L3Xb--LqKIw9DBHvtwa/view?usp=sharing]
+[Video Link](https://drive.google.com/file/d/1LQlQ1oKDfjQB6L3Xb--LqKIw9DBHvtwa/view?usp=sharing)
 
 As you can see the LLM App enables AI-powered search from multiple unstructured documents like tax information from different countries, and indexes input data in real-time just after you upload files to the storage.
 
